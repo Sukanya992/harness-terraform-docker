@@ -10,7 +10,7 @@ resource "google_compute_instance" "vm_instance" {
 
   boot_disk {
     initialize_params {
-      image = "ubuntu-2004-focal-v20240115"
+      image = "ubuntu-2004-focal-v20210325" 
     }
   }
 
