@@ -1,13 +1,12 @@
 provider "google" {
-  project = var.project_id
-  region  = var.region
-  credentials = file(var.credentials_file)
+  project = "plated-epigram-452709-h6"
+  region  = "us-central1"
 }
 
 resource "google_compute_instance" "vm_instance" {
   name         = "harness-ci-vm"
   machine_type = "e2-medium"
-  zone         = var.zone
+  zone         = "us-central1-a"
 
   boot_disk {
     initialize_params {
